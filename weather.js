@@ -1,5 +1,7 @@
 let celsius;
 let fahrenheit;
+const mykey = config.MY_KEY;
+
 
 //array used to change backgroung image based on current weather description
 const weatherInfo = [
@@ -42,7 +44,7 @@ window.addEventListener('load', (event) => {
             lat = position.coords.latitude;
             
             const proxy = 'https://cors-anywhere.herokuapp.com/';
-            const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=5864e644a5dbbd751b95b65f3dea6514`;
+            const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${mykey}`;
 
             fetch(api)
             .then(response => {
