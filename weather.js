@@ -1,7 +1,6 @@
 let celsius;
 let fahrenheit;
-// const mykey = config.MY_KEY;
-const mykey = process.env.SECRET_KEY;
+const mykey = config.MY_KEY
 
 
 //array used to change backgroung image based on current weather description
