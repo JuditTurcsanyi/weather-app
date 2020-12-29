@@ -64,7 +64,7 @@ window.addEventListener('load', (event) => {
                 //change background image based on weather description
                 for (let i = 0; i < weatherInfo.length; i++) {
                     if(main == weatherInfo[i].description) {
-                        document.body.style.backgroundImage = `url(/images/${weatherInfo[i].image})`;
+                        document.body.style.backgroundImage = `url(./images/${weatherInfo[i].image})`;
                     }
                 }
             });
